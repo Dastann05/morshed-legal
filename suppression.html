@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morshed — Supprimer vos données</title>
+<style>
+:root{--fond:#14120f;--texte:#e8e3da;--doux:#a09788;--accent:#5aa9ff;--trait:#2a261f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 .25rem}
+.sous{color:var(--doux);margin:0 0 2.5rem;font-size:.95rem}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-top:1.5rem;border-top:1px solid var(--trait)}
+ol,ul{padding-left:1.15rem}
+li{margin:.45rem 0}
+a{color:var(--accent)}
+strong{color:#fff}
+code{color:var(--doux)}
+table{border-collapse:collapse;width:100%;margin:.5rem 0 0}
+th,td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--trait);vertical-align:top}
+th{color:var(--doux);font-weight:500;font-size:.9rem}
+footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);color:var(--doux);font-size:.9rem}
+hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Morshed — Supprimer votre compte et vos données</h1>
+<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 20 août 2026</p>
+
+<h2>Ce qu'il faut savoir d'abord</h2>
+<p>Morshed ne crée <strong>aucun compte</strong> chez l'éditeur. Il n'y a ni inscription, ni mot de passe, ni profil à administrer. Vos séances, votre historique et vos réglages vivent dans la base de données privée de l'application, sur votre téléphone.</p>
+<p>Deux choses seulement peuvent exister en dehors de l'appareil, et uniquement si vous les avez activées vous-même : la sauvegarde Android vers votre propre espace Google Drive, et votre adresse e-mail sur la liste d'autorisation du serveur, si vous vous êtes connecté avec un compte Google pour utiliser la composition de séance assistée. Les deux se suppriment, et la marche à suivre est ci-dessous.</p>
+
+<h2>1. Supprimer les données de l'application (immédiat)</h2>
+<ol>
+  <li>Ouvrez les <strong>Paramètres</strong> de votre téléphone.</li>
+  <li>Allez dans <strong>Applications</strong>, puis <strong>Morshed</strong>.</li>
+  <li>Touchez <strong>Stockage</strong>, puis <strong>Effacer les données</strong>.</li>
+</ol>
+<p>Tout est supprimé sur-le-champ : séances, historique importé, modèles, réglages et sauvegardes locales. La suppression est définitive et il n'existe aucune copie chez l'éditeur. Désinstaller l'application produit le même résultat.</p>
+
+<h2>2. Supprimer la sauvegarde Android (si elle est activée)</h2>
+<p>Si la sauvegarde automatique de votre téléphone est active, Android a pu copier les données de l'application dans votre propre espace Google Drive. Cette copie appartient à votre compte Google et l'éditeur n'y a aucun accès. Pour la supprimer : <strong>Paramètres → Google → Sauvegarde</strong>, puis supprimez la sauvegarde correspondant à Morshed. Vous pouvez aussi désactiver la sauvegarde pour cette application afin qu'aucune copie ne soit reprise à l'avenir.</p>
+
+<h2>3. Retirer votre adresse de la liste d'autorisation (si vous vous êtes connecté)</h2>
+<p>La connexion Google est facultative et sert uniquement à autoriser les appels à la composition de séance assistée. Si vous l'avez utilisée, votre adresse e-mail peut figurer sur la liste d'autorisation du serveur. Pour la faire retirer, écrivez à <a href="mailto:gagoun.prs@gmail.com?subject=Suppression%20de%20mes%20donn%C3%A9es%20Morshed">gagoun.prs@gmail.com</a> avec pour objet <em>« Suppression de mes données Morshed »</em>, depuis l'adresse concernée.</p>
+<p>La demande est traitée sous <strong>30 jours</strong>, et en pratique bien plus vite. Vous recevez une confirmation écrite une fois le retrait effectué.</p>
+<p>Vous pouvez aussi couper l'accès de votre côté à tout moment, sans écrire à personne : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, puis retirez Morshed.</p>
+
+<h2>Ce qui est supprimé, ce qui est conservé</h2>
+<table>
+  <tr><th>Donnée</th><th>Où elle vit</th><th>Sort</th></tr>
+  <tr><td>Séances, historique, modèles, réglages</td><td>Votre téléphone</td><td>Supprimés immédiatement à l'étape 1. Aucune conservation.</td></tr>
+  <tr><td>Sauvegardes locales de la base</td><td>Votre téléphone</td><td>Supprimées immédiatement à l'étape 1.</td></tr>
+  <tr><td>Fichiers que vous avez exportés vous-même</td><td>Le dossier que vous avez choisi</td><td>Vous en êtes propriétaire ; à supprimer vous-même si vous le souhaitez.</td></tr>
+  <tr><td>Sauvegarde Android</td><td>Votre espace Google Drive</td><td>Supprimée par vous à l'étape 2. L'éditeur n'y a pas accès.</td></tr>
+  <tr><td>Adresse e-mail sur la liste d'autorisation</td><td>Serveur de l'éditeur</td><td>Retirée sur demande, sous 30 jours (étape 3).</td></tr>
+  <tr><td>Composition d'une séance envoyée pour traitement</td><td>Serveur de l'éditeur</td><td>Traitée puis effacée ; aucune conservation après la réponse.</td></tr>
+</table>
+<p>L'éditeur ne conserve ni votre historique d'entraînement, ni vos mesures corporelles, ni un identifiant d'appareil. Il n'y a donc rien d'autre à supprimer.</p>
+
+<p style="margin-top:2rem"><a href="./">Politique de confidentialité de Morshed</a></p>
+
+<hr class="lang">
+
+<h1 style="margin-top:3rem">Morshed — Delete your account and data</h1>
+<p class="sous">Android application <code>app.morshed</code> · Last updated: 20 August 2026 · English summary</p>
+
+<h2 style="border-top:0;padding-top:0">First, what exists</h2>
+<p>Morshed creates <strong>no account</strong> with the developer. There is no sign-up, no password and no profile. Your workouts, history and settings live in the app's private database, on your phone.</p>
+
+<h2>1. Delete the app's data (immediate)</h2>
+<p>Phone <strong>Settings → Apps → Morshed → Storage → Clear data</strong>. Everything is deleted at once: workouts, imported history, templates, settings and local backups. Deletion is permanent and the developer holds no copy. Uninstalling has the same effect.</p>
+
+<h2>2. Delete the Android backup (if enabled)</h2>
+<p>If your phone's automatic backup is on, Android may have copied the app's data into your own Google Drive backup space. It belongs to your Google account and the developer has no access to it. Remove it under <strong>Settings → Google → Backup</strong>.</p>
+
+<h2>3. Remove your address from the allowlist (if you signed in)</h2>
+<p>Google sign-in is optional and only authorises calls to the assisted workout composition. If you used it, your email address may be on the server's allowlist. To have it removed, email <a href="mailto:gagoun.prs@gmail.com?subject=Morshed%20data%20deletion%20request">gagoun.prs@gmail.com</a> from that address, with the subject <em>"Morshed data deletion request"</em>. Requests are handled within <strong>30 days</strong>, and you receive written confirmation. You can also revoke access yourself at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>What is deleted, what is kept</h2>
+<p>On-device data (workouts, history, templates, settings, local backups) is deleted immediately and kept for no additional period. Files you exported yourself are yours to delete. The Android backup is removed by you, from your own Google account. Your email address on the allowlist is removed on request within 30 days. A workout composition sent for processing is processed and then discarded; nothing is retained afterwards. The developer keeps no training history, no body measurements and no device identifier.</p>
+
+<footer>
+Morshed · <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a> · <a href="./">Privacy policy</a>
+</footer>
+
+</main>
+</body>
+</html>
