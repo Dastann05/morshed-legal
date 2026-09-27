@@ -26,46 +26,57 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <main>
 
 <h1>Morshed — Politique de confidentialité</h1>
-<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 20 août 2026</p>
+<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 27 septembre 2026</p>
 
-<h2>En une phrase</h2>
-<p>Morshed est un carnet d'entraînement. Vos séances, votre historique et vos réglages sont enregistrés sur votre téléphone et n'en sortent pas, à une exception près, facultative et décrite plus bas : la composition de séance assistée, qui transmet la composition d'une seule séance à un serveur de l'éditeur. L'application ne contient ni publicité, ni outil de mesure d'audience, ni SDK tiers de suivi.</p>
+<h2>En bref</h2>
+<p>Morshed est un carnet d'entraînement. Depuis la version 0.39.0, tout se passe sur votre téléphone : vos séances y sont enregistrées, et la séance du jour y est composée. <strong>L'application n'envoie rien à l'éditeur</strong>, sauf si vous choisissez de vous connecter à un compte, ce qui est facultatif et décrit plus bas. Elle ne contient ni publicité, ni outil de mesure d'audience, ni SDK tiers de suivi.</p>
 
 <h2>Qui édite l'application</h2>
-<p>Morshed est édité par un développeur indépendant. Pour toute question relative à vos données : <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
+<p>Morshed est édité par un développeur indépendant, responsable du traitement de vos données. Pour toute question : <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
 
-<h2>Les données que l'application manipule</h2>
-<p>Toutes sont créées par vous, et toutes sont enregistrées <strong>localement</strong>, dans la base de données privée de l'application sur votre appareil :</p>
+<h2>Ce que l'application enregistre sur votre téléphone</h2>
+<p>Tout ce qui suit reste dans la base de données privée de l'application, sur votre appareil :</p>
 <ul>
   <li>vos séances : exercices, charges, répétitions, séries, temps de repos, dates ;</li>
-  <li>vos modèles de séance et vos réglages ;</li>
-  <li>l'historique que vous importez depuis un fichier CSV (export Strong, Hevy ou FitNotes). Le fichier est lu sur votre appareil, il n'est envoyé nulle part.</li>
+  <li>vos modèles de séance et vos réglages : lieu, matériel disponible, zones du corps à ménager, niveau par type de mouvement ;</li>
+  <li>l'historique que vous importez depuis un fichier CSV (Strong, Hevy ou FitNotes). Le fichier est lu sur l'appareil et n'est envoyé nulle part ;</li>
+  <li>si vous les renseignez : votre poids de corps, votre sexe et votre année de naissance, qui servent à calculer le volume des mouvements au poids du corps et à situer vos charges sur des barèmes ; votre prénom, affiché sur l'accueil ;</li>
+  <li>les photos que vous choisissez pour illustrer un workout. Vous les choisissez dans le sélecteur d'Android : l'application ne voit que l'image choisie, en garde une copie, et ne parcourt pas votre galerie ;</li>
+  <li>les formulations que vous employez en dictée et que l'application apprend à reconnaître.</li>
 </ul>
-<p>L'application ne demande ni nom, ni adresse, ni date de naissance, ni numéro de téléphone. Elle ne lit pas vos contacts, votre position, vos photos ni votre carnet d'adresses.</p>
+<p>L'application ne demande ni adresse postale ni numéro de téléphone. Elle n'accède ni à vos contacts, ni à votre position, ni à votre appareil photo.</p>
 
-<h2>Sauvegarde et restauration</h2>
+<h2>La composition de séance</h2>
+<p>Elle se fait entièrement sur le téléphone, à partir de votre historique, sans connexion. Aucune donnée n'est transmise pour composer une séance, ni à l'éditeur ni à un tiers.</p>
+
+<h2>La dictée vocale (facultative)</h2>
+<p>Si vous touchez le micro, l'application demande l'autorisation d'utiliser le microphone, puis confie votre voix au service de reconnaissance vocale de votre téléphone, en général celui de Google. Ce service peut traiter le son sur ses propres serveurs, selon ses propres règles. Morshed ne reçoit que le texte reconnu et ne garde aucun enregistrement.</p>
+
+<h2>Les vidéos de démonstration</h2>
+<p>« Voir une vidéo de démonstration » ouvre YouTube dans votre navigateur, avec une recherche sur le nom de l'exercice. YouTube reçoit cette recherche comme n'importe quelle autre.</p>
+
+<h2>La connexion à un compte (facultative)</h2>
+<p>Votre page profil propose de vous connecter avec un compte Google ou Outlook. Pour l'instant, cette connexion ne débloque aucune fonction : l'application s'utilise entièrement sans elle.</p>
+<p>Si vous vous connectez, vous saisissez vos identifiants chez Google ou Microsoft, dans votre navigateur, jamais dans l'application. Le fournisseur transmet alors à un relais de l'éditeur votre adresse e-mail, votre nom et le lien de votre photo de profil. Le relais vérifie que votre adresse figure sur la liste des testeurs invités, puis remet au téléphone une session signée. Il ne conserve rien d'autre à votre sujet : la session et votre profil sont gardés sur le téléphone, chiffrés. Pour afficher votre photo, l'application la télécharge chez le fournisseur.</p>
+<p>Ce relais est hébergé par Vercel Inc., aux États-Unis. Ce transfert hors de l'Union européenne est encadré par les clauses contractuelles types de la Commission européenne (décision 2021/914), que reprend l'accord de traitement de données de Vercel. Ce traitement repose sur votre consentement, donné en vous connectant ; vous le retirez à tout moment en vous déconnectant.</p>
+<p>« Se déconnecter », sur la page profil, efface la session du téléphone. Vous pouvez aussi retirer l'accès depuis <a href="https://myaccount.google.com/permissions">votre compte Google</a> ou votre compte Microsoft. Si vous avez été invité comme testeur, votre adresse figure sur la liste des testeurs du relais ; elle en est retirée sur simple demande (voir la <a href="suppression.html">page de suppression des données</a>).</p>
+
+<h2>Les versions antérieures à la 0.39.0</h2>
+<p>De la version 0.30 à la version 0.38, composer une séance ou générer une illustration passait par un serveur de l'éditeur. Pour une séance, l'application y envoyait, avec votre adresse e-mail, un dossier : exercices réalisables, volume de vos deux dernières semaines, dernières charges, niveaux, matériel, lieu et durée demandés. Pour une illustration, les exercices du workout. Le serveur faisait traiter ces demandes par un modèle d'intelligence artificielle d'Anthropic (Claude) et dessinait les illustrations sur un ordinateur de l'éditeur.</p>
+<p><strong>Le 27 septembre 2026, l'éditeur a effacé toutes ces demandes</strong>, et le relais n'en accepte plus aucune. Les dernières copies de travail sont détruites au plus tard le 27 octobre 2026. Si vous utilisez encore une ancienne version, mettez l'application à jour depuis le Play Store. Le journal technique du serveur a gardé, pour chaque demande, l'adresse e-mail et l'heure ; ces lignes sont effacées sur simple demande.</p>
+
+<h2>Sauvegarde et transfert</h2>
 <ul>
-  <li><strong>Sauvegardes locales automatiques</strong> : l'application enregistre une copie de sa base après une séance et avant chaque mise à jour de son schéma. Ces copies restent sur l'appareil.</li>
-  <li><strong>Export</strong> : vous pouvez désigner un dossier de votre appareil vers lequel l'application exporte automatiquement vos données. Ce dossier vous appartient.</li>
-  <li><strong>Sauvegarde Android</strong> : si la sauvegarde automatique de votre téléphone est activée, Android peut copier les données de l'application vers votre propre espace Google Drive. Cette sauvegarde est chiffrée et gérée par Google, sous votre compte. L'éditeur n'y a aucun accès. Vous pouvez la désactiver dans les réglages Android de votre téléphone.</li>
+  <li><strong>Sauvegardes locales</strong> : l'application garde une copie de sa base après une séance et avant chaque mise à jour de son schéma. Ces copies restent sur l'appareil.</li>
+  <li><strong>Export</strong> : vous pouvez choisir un dossier vers lequel l'application exporte vos séances au format CSV. Si ce dossier appartient à un service en ligne (Google Drive, OneDrive…), votre historique y est stocké selon les règles de ce service.</li>
+  <li><strong>Sauvegarde Android</strong> : si la sauvegarde de votre téléphone est activée, Android copie vers votre espace Google la base de l'application et ses réglages, sans votre session de compte ni vos photos. Cette copie est chiffrée, gérée par Google sous votre compte, et l'éditeur n'y a pas accès. Vous pouvez la désactiver dans les réglages Android.</li>
+  <li><strong>Changement de téléphone</strong> : lors d'un transfert d'un appareil à l'autre, Android copie les mêmes éléments, photos comprises.</li>
 </ul>
-
-<h2>Health Connect (facultatif)</h2>
-<p>Si — et seulement si — vous le lui autorisez explicitement, l'application peut lire dans Health Connect vos pas, vos séances d'exercice, votre fréquence cardiaque au repos, votre sommeil et votre poids, et y écrire les séances que vous enregistrez. Ces données servent uniquement à l'affichage dans l'application, sur votre appareil. <strong>Elles ne sont jamais transmises à l'éditeur ni à un tiers.</strong> Vous pouvez retirer chaque autorisation à tout moment depuis Health Connect ou depuis les réglages Android.</p>
-
-<h2>Fonctions en réseau (facultatives, désactivées par défaut)</h2>
-<p>L'application peut se connecter à un serveur <strong>exploité par l'éditeur</strong>, hébergé chez lui sur un réseau privé, afin de générer une proposition de séance ou une illustration. Ce n'est jamais automatique : la connexion n'a lieu qu'au moment où vous demandez explicitement une composition ou une illustration. Le reste de l'application fonctionne sans aucune connexion sortante.</p>
-<p>Lorsque cette fonction est utilisée, l'application transmet à ce serveur <strong>la seule composition de la séance concernée</strong> : les exercices, le volume par famille musculaire et les dernières charges utilisées. Elle ne transmet ni votre historique complet, ni vos mesures corporelles, ni un identifiant d'appareil.</p>
-<p>Ce serveur n'est pas accessible depuis l'internet public : il n'est joignable que depuis le réseau privé de l'éditeur. Pour la même raison, le trafic vers lui n'est <strong>pas chiffré en transit</strong> — il ne quitte jamais ce réseau privé. La composition reçue est traitée puis effacée : elle n'est pas conservée après l'envoi de la réponse.</p>
-
-<h2>Connexion Google (facultative)</h2>
-<p>Pour utiliser les fonctions décrites ci-dessus, l'application peut vous demander de choisir un compte Google. Elle obtient un jeton d'identité signé par Google, contenant votre adresse e-mail et l'identifiant de votre compte, et le transmet au serveur de l'éditeur, qui vérifie que votre adresse figure sur sa liste d'autorisation. Votre adresse e-mail est donc connue de l'éditeur, et uniquement à cette fin. Elle n'est ni revendue, ni partagée, ni utilisée pour vous écrire sans que vous l'ayez demandé.</p>
-<p>Cette connexion ne déverrouille aucune fonction du carnet lui-même : refuser de se connecter, ou ne pas avoir les services Google, laisse l'application pleinement utilisable. Vous pouvez révoquer cet accès à tout moment depuis <a href="https://myaccount.google.com/permissions">votre compte Google</a>, et demander le retrait de votre adresse — voir la <a href="suppression.html">page de suppression des données</a>.</p>
 
 <h2>Ce que l'application ne fait pas</h2>
 <ul>
   <li>Aucune publicité, aucun achat intégré, aucun traceur publicitaire.</li>
-  <li>Aucun outil de mesure d'audience ni de rapport de plantage tiers (ni Firebase, ni Crashlytics, ni équivalent).</li>
+  <li>Aucun outil de mesure d'audience ni de rapport de plantage (ni Firebase, ni Crashlytics, ni équivalent).</li>
   <li>Aucune vente, location ou partage de données avec qui que ce soit.</li>
   <li>Aucun profilage, aucune décision automatisée vous concernant.</li>
 </ul>
@@ -75,49 +86,48 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
   <li><strong>Notifications</strong> et <strong>alarme exacte</strong> : afficher le minuteur de repos et sonner à l'heure juste.</li>
   <li><strong>Service au premier plan</strong> : garder le minuteur en marche quand l'écran s'éteint.</li>
   <li><strong>Vibreur</strong> : signaler la fin d'un repos.</li>
-  <li><strong>Internet</strong> et <strong>état du réseau</strong> : uniquement pour les fonctions facultatives décrites plus haut.</li>
-  <li><strong>Health Connect</strong> : uniquement si vous l'accordez.</li>
+  <li><strong>Microphone</strong> : la dictée vocale, seulement quand vous touchez le micro.</li>
+  <li><strong>Internet</strong> et <strong>état du réseau</strong> : la connexion facultative à un compte.</li>
+  <li><strong>Démarrage du téléphone</strong> et <strong>maintien en éveil</strong> : ajoutées par la bibliothèque Android des tâches planifiées, pour reprendre ses tâches après un redémarrage.</li>
 </ul>
 
 <h2>Durée de conservation, et comment tout effacer</h2>
-<p>Vos données restent sur votre appareil aussi longtemps que l'application y est installée. Pour tout supprimer : effacez les données de l'application, ou désinstallez-la, depuis les réglages Android. La suppression est immédiate et définitive, et l'éditeur ne détient aucune copie de votre historique.</p>
-<p>Si vous vous êtes connecté avec un compte Google, votre adresse e-mail peut figurer sur la liste d'autorisation du serveur ; son retrait se demande par écrit et intervient sous 30 jours. La marche à suivre complète, étape par étape : <a href="suppression.html">supprimer votre compte et vos données</a>.</p>
-<p>Si la sauvegarde Android est active, pensez également à supprimer la sauvegarde correspondante depuis votre compte Google.</p>
+<p>Vos données restent sur votre appareil tant que l'application y est installée. Pour tout supprimer, effacez les données de l'application ou désinstallez-la depuis les réglages Android : c'est immédiat et définitif, et l'éditeur ne détient aucune copie de votre historique. La marche à suivre complète, avec la sauvegarde Android et la liste des testeurs : <a href="suppression.html">supprimer votre compte et vos données</a>.</p>
 
 <h2>Vos droits</h2>
-<p>Le règlement général sur la protection des données (RGPD) vous ouvre un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. Ces droits s'exercent ici directement dans l'application : vos données y sont consultables, modifiables, exportables au format ouvert et supprimables sans passer par personne. Pour toute question, écrivez à <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
+<p>Le règlement général sur la protection des données (RGPD) vous donne un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. Pour ce qui vit sur votre téléphone, vous les exercez directement dans l'application : vos données y sont consultables, modifiables, exportables en CSV et supprimables. Pour le reste, écrivez à <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a> ; la réponse vient sous un mois. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr/fr/plaintes">cnil.fr</a>).</p>
 
 <h2>Enfants</h2>
 <p>Morshed n'est pas destinée aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
 
 <h2>Modifications</h2>
-<p>Cette page est mise à jour à chaque changement du comportement de l'application. La date en haut de page fait foi. Un changement qui élargirait la nature des données traitées sera signalé dans les notes de version.</p>
+<p>Cette page est mise à jour à chaque changement du comportement de l'application. La date en haut de page fait foi. Un changement qui élargirait les données traitées sera signalé dans les notes de version.</p>
 
 <hr class="lang">
 
 <h1 style="margin-top:3rem">Morshed — Privacy Policy</h1>
-<p class="sous">Android application <code>app.morshed</code> · Last updated: 20 August 2026 · English summary</p>
+<p class="sous">Android application <code>app.morshed</code> · Last updated: 27 September 2026 · English summary</p>
 
-<h2 style="border-top:0;padding-top:0">In one sentence</h2>
-<p>Morshed is a workout log. Your sessions, history and settings are stored on your device and stay there, with one optional exception described below: the assisted workout composition, which sends the composition of a single workout to a server operated by the developer. The app contains no advertising, no analytics and no third-party tracking SDK.</p>
+<h2 style="border-top:0;padding-top:0">In short</h2>
+<p>Morshed is a workout log. Since version 0.39.0 everything happens on your phone: your workouts are stored there, and the day's workout is composed there. <strong>The app sends nothing to the developer</strong>, unless you choose to sign in to an account, which is optional and described below. It contains no advertising, no analytics and no third-party tracking SDK. The developer, an independent publisher, is the data controller: <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
 
-<h2>Data handled</h2>
-<p>Everything you enter — exercises, weights, repetitions, sets, rest times, dates, workout templates, settings, and any CSV history you import from Strong, Hevy or FitNotes — is stored <strong>locally</strong>, in the app's private database. The app never asks for your name, address, date of birth or phone number, and does not access contacts, location or photos.</p>
+<h2>Stored on your phone</h2>
+<p>Workouts (exercises, weights, reps, sets, rest times, dates), templates and settings (location, available equipment, body areas to spare, levels), CSV history imported from Strong, Hevy or FitNotes, and, if you enter them, your body weight, sex, year of birth and first name. Photos you pick through Android's photo picker to illustrate a workout are copied into the app; it never browses your gallery. Phrases you use when dictating are learned locally. The app does not access contacts, location or the camera.</p>
 
-<h2>Backup</h2>
-<p>The app keeps automatic local backups and can export to a folder you choose. If Android's built-in backup is enabled on your phone, Android may copy the app's data to your own Google Drive backup space; it is encrypted and managed by Google under your account, and the developer has no access to it.</p>
+<h2>Workout composition, voice input, videos</h2>
+<p>Workouts are composed entirely on the phone; nothing is transmitted to do so. If you tap the microphone, your voice goes to your phone's speech recognition service (usually Google's), which may process it on its servers; Morshed only receives the text and keeps no recording. "Watch a demonstration video" opens a YouTube search for the exercise name in your browser.</p>
 
-<h2>Health Connect (optional)</h2>
-<p>With your explicit permission, the app can read steps, exercise sessions, resting heart rate, sleep and weight from Health Connect, and write your workouts back to it. This data is used for display within the app only, on your device. <strong>It is never transmitted to the developer or to any third party.</strong> Permissions can be revoked at any time.</p>
+<h2>Optional account sign-in</h2>
+<p>You can sign in with a Google or Outlook account from your profile page; for now it unlocks no feature. You enter your credentials with Google or Microsoft in your browser. The provider sends your email address, name and profile photo link to the developer's relay, which checks your address against the list of invited testers and gives the phone a signed session. The relay keeps nothing else about you; the session and profile stay on the phone, encrypted. The relay is hosted by Vercel Inc. in the United States, under the European Commission's standard contractual clauses (decision 2021/914) included in Vercel's data processing agreement. Signing out deletes the session from the phone; you can ask to be removed from the tester list at any time.</p>
 
-<h2>Optional network features</h2>
-<p>The app can connect to a server <strong>operated by the developer</strong>, hosted on a private network, to generate a workout suggestion or an illustration. This never happens automatically: it only occurs when you explicitly ask for a composition or an illustration. When used, it transmits only the composition of the workout concerned — exercises, volume per muscle family, and last weights used. It does not transmit your full history, body measurements, or a device identifier. That server is not reachable from the public internet; for the same reason traffic to it is <strong>not encrypted in transit</strong>, as it never leaves that private network. What is received is processed and then discarded.</p>
+<h2>Versions before 0.39.0</h2>
+<p>From version 0.30 to 0.38, composing a workout or generating an illustration went through a server operated by the developer. With your email address, the app sent a workout file (feasible exercises, last two weeks of volume, last weights, levels, equipment, location, requested duration), or the workout's exercises for an illustration. The server had these requests processed by an Anthropic AI model (Claude) and drew illustrations on a computer of the developer. <strong>On 27 September 2026 the developer deleted all these requests</strong>, and the relay no longer accepts any; the last working copies are destroyed by 27 October 2026. If you still run an older version, update from the Play Store. The server's technical log kept the email address and time of each request; these lines are deleted on request.</p>
 
-<h2>Optional Google sign-in</h2>
-<p>To use the features above, the app may ask you to pick a Google account. It obtains a Google-signed identity token containing your email address and account identifier, and sends it to the developer's server, which checks your address against its allowlist. Your email address is therefore known to the developer, for that purpose only; it is never sold, shared, or used to contact you unsolicited. Declining leaves the app fully usable. You can revoke access at any time at <a href="https://myaccount.google.com/permissions">your Google account</a>, and request removal — see the <a href="suppression.html">data deletion page</a>.</p>
+<h2>Backup and transfer</h2>
+<p>Local backups stay on the device. You can export your workouts as CSV to a folder you choose; if it belongs to an online service, your history is stored there under that service's rules. If Android backup is on, Android copies the app's database and settings to your Google account, excluding your account session and photos; it is encrypted, managed by Google, and the developer has no access. A device-to-device transfer copies the same items, photos included.</p>
 
 <h2>Deletion and your rights</h2>
-<p>Clearing the app's data or uninstalling it deletes everything, immediately and permanently; the developer holds no copy of your training history. If you signed in with a Google account, your email address may be on the server's allowlist and is removed on request within 30 days — see the <a href="suppression.html">data deletion page</a>. Under the GDPR you have rights of access, rectification, erasure, restriction, objection and portability; these are exercised directly in the app, which lets you view, edit, export and delete your data without going through anyone. Questions: <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
+<p>Clearing the app's data or uninstalling it deletes everything, immediately and permanently; the developer holds no copy of your training history. Under the GDPR you have rights of access, rectification, erasure, restriction, objection and portability. For data on your phone, you exercise them in the app, which lets you view, edit, export and delete your data. For anything else, email <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>; you will get an answer within a month. You may also lodge a complaint with the CNIL, the French data protection authority. See the <a href="suppression.html">data deletion page</a>.</p>
 
 <h2>Children</h2>
 <p>Morshed is not directed at children under 13 and knowingly collects no data concerning them.</p>
