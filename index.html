@@ -26,7 +26,7 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <main>
 
 <h1>Morshed — Politique de confidentialité</h1>
-<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 28 septembre 2026</p>
+<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 1 octobre 2026</p>
 
 <h2>En bref</h2>
 <p>Morshed est un carnet d'entraînement. Depuis la version 0.39.0, tout se passe sur votre téléphone : vos séances y sont enregistrées, et la séance du jour y est composée. <strong>L'application n'envoie rien à l'éditeur.</strong> Elle ne contient ni publicité, ni outil de mesure d'audience, ni SDK tiers de suivi.</p>
@@ -55,11 +55,32 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <h2>Les vidéos de démonstration</h2>
 <p>« Voir une vidéo de démonstration » ouvre YouTube dans votre navigateur, avec une recherche sur le nom de l'exercice. YouTube reçoit cette recherche comme n'importe quelle autre.</p>
 
-<h2>La connexion à un compte (versions de test)</h2>
-<p>Depuis la version 0.44.0, l'application ne propose plus de se connecter : elle s'utilise entièrement sans compte. Ce qui suit ne concerne que les testeurs qui s'étaient connectés avec une version antérieure, et dont le compte reste affiché sur la page profil jusqu'à ce qu'ils se déconnectent.</p>
-<p>Lors de cette connexion, vous saisissez vos identifiants chez Google ou Microsoft, dans votre navigateur, jamais dans l'application. Le fournisseur transmet alors à un relais de l'éditeur votre adresse e-mail, votre nom et le lien de votre photo de profil. Le relais vérifie que votre adresse figure sur la liste des testeurs invités, puis remet au téléphone une session signée. Il ne conserve rien d'autre à votre sujet : la session et votre profil sont gardés sur le téléphone, chiffrés. Pour afficher votre photo, l'application la télécharge chez le fournisseur.</p>
-<p>Ce relais est hébergé par Vercel Inc., aux États-Unis. Ce transfert hors de l'Union européenne est encadré par les clauses contractuelles types de la Commission européenne (décision 2021/914), que reprend l'accord de traitement de données de Vercel. Ce traitement repose sur votre consentement, donné en vous connectant ; vous le retirez à tout moment en vous déconnectant.</p>
-<p>« Se déconnecter », sur la page profil, efface la session du téléphone. Vous pouvez aussi retirer l'accès depuis <a href="https://myaccount.google.com/permissions">votre compte Google</a> ou votre compte Microsoft. Si vous avez été invité comme testeur, votre adresse figure sur la liste des testeurs du relais ; elle en est retirée sur simple demande (voir la <a href="suppression.html">page de suppression des données</a>).</p>
+<h2>La connexion à un compte</h2>
+<p>Le carnet s'utilise entièrement sans compte. Se connecter n'est proposé qu'à un seul endroit : le bouton <strong>« Amis »</strong>, pour utiliser la fonction d'entraînement entre amis décrite plus bas. Entre la version 0.44.0 et la version 0.45.x, l'application ne proposait aucune connexion ; depuis la 0.46.0, elle revient, mais seulement pour cet usage.</p>
+<p>Lors de cette connexion, vous saisissez vos identifiants chez Google ou Microsoft, dans votre navigateur, jamais dans l'application. Le fournisseur transmet alors à un relais de l'éditeur votre adresse e-mail, votre nom et le lien de votre photo de profil. Le relais vérifie que les inscriptions sont ouvertes, puis remet au téléphone une session signée. Il ne conserve pas votre adresse e-mail : un identifiant calculé à partir de votre adresse (impossible à retrouver sans elle) sert à vous reconnaître à la prochaine connexion. La session et votre profil sont gardés sur le téléphone, chiffrés. Pour afficher votre photo, l'application la télécharge chez le fournisseur.</p>
+<p>Ce relais est hébergé par Vercel Inc., aux États-Unis. Ce transfert hors de l'Union européenne est encadré par les clauses contractuelles types de la Commission européenne (décision 2021/914), que reprend l'accord de traitement de données de Vercel. Ce traitement repose sur votre consentement, donné en vous connectant ; vous le retirez à tout moment en vous déconnectant ou en supprimant votre compte.</p>
+<p>« Se déconnecter », sur la page profil, efface la session du téléphone. Vous pouvez aussi retirer l'accès depuis <a href="https://myaccount.google.com/permissions">votre compte Google</a> ou votre compte Microsoft. Pour supprimer le compte lui-même, voir <a href="suppression.html">la page de suppression des données</a>.</p>
+
+<h2>Entraînement entre amis</h2>
+<p>Depuis la version 0.46.0, le bouton « Amis » propose de s'entraîner avec d'autres personnes : s'inviter, se motiver avant une séance, s'organiser un rendez-vous, se lancer un défi, s'entraîner en même temps à distance. Cette fonction est facultative et reste fermée tant que vous n'ouvrez pas « Amis ».</p>
+<p>Pour qu'elle fonctionne, les informations suivantes sortent du téléphone :</p>
+<ul>
+  <li>votre prénom, affiché à vos amis ;</li>
+  <li>votre liste d'amis ;</li>
+  <li>les modèles de séance que vous partagez — nom, exercices, séries et répétitions, jamais les charges ;</li>
+  <li>votre avancement pendant une séance de groupe — les séries faites, pas les poids soulevés ;</li>
+  <li>les totaux du récap affiché à la fin d'une séance de groupe (nombre de séries, tonnage) ;</li>
+  <li>vos réponses à un rendez-vous ou à une invitation ;</li>
+  <li>jusqu'à trois muscles que vous travaillez moins que les autres, sans aucun chiffre, et seulement si vous donnez votre accord en composant une séance pour le groupe ;</li>
+  <li>le jeton technique qui permet à votre téléphone de recevoir une notification.</li>
+</ul>
+<p>Votre historique d'entraînement et vos charges restent sur votre téléphone : ils ne sont jamais transmis.</p>
+<p><strong>Où c'est hébergé.</strong> Ces données sont traitées par un serveur Cloudflare dont le stockage est restreint à l'Union européenne. La connexion passe par le relais Vercel décrit ci-dessus. Les notifications passent par Firebase Cloud Messaging, un service de Google.</p>
+<p><strong>Combien de temps.</strong> Une séance de groupe est effacée 24 heures après sa clôture. Votre compte, votre liste d'amis et le reste de ces données sont gardés tant que vous ne supprimez pas votre compte.</p>
+<p><strong>Comment supprimer.</strong> Dans l'application : <strong>Amis → Mon compte → Supprimer mon compte</strong>. Depuis un navigateur, sans l'application : <a href="https://morshed-file.vercel.app/supprimer-mon-compte">morshed-file.vercel.app/supprimer-mon-compte</a>. Dans les deux cas, la suppression est immédiate : compte, amitiés, invitations et le reste disparaissent du serveur.</p>
+<p><strong>Base légale.</strong> Pour l'essentiel de ces données, le traitement est nécessaire à l'exécution du service que vous demandez en ouvrant « Amis » (article 6.1.b du RGPD). Pour les muscles en retard, c'est votre accord explicite, donné à chaque fois que vous composez une séance pour le groupe, qui sert de base (article 6.1.a).</p>
+<p><strong>Âge minimum.</strong> Le carnet n'a pas d'âge minimum. La fonction « Amis » suppose un compte et n'est ouverte qu'à partir de 15 ans, l'âge à partir duquel le droit français permet de consentir seul à ce type de traitement.</p>
+<p><strong>Sous-traitants et transferts hors de l'Union européenne.</strong> Cloudflare, Inc. et Google LLC (Firebase Cloud Messaging) sont basés aux États-Unis ; tous deux adhèrent au cadre de protection des données UE-États-Unis (EU-U.S. Data Privacy Framework), qui encadre ce transfert. Vercel Inc., pour la connexion, reste couvert par les clauses contractuelles types mentionnées plus haut.</p>
 
 <h2>Les versions antérieures à la 0.39.0</h2>
 <p>De la version 0.30 à la version 0.38, composer une séance ou générer une illustration passait par un serveur de l'éditeur. Pour une séance, l'application y envoyait, avec votre adresse e-mail, un dossier : exercices réalisables, volume de vos deux dernières semaines, dernières charges, niveaux, matériel, lieu et durée demandés. Pour une illustration, les exercices du workout. Le serveur faisait traiter ces demandes par un modèle d'intelligence artificielle d'Anthropic (Claude) et dessinait les illustrations sur un ordinateur de l'éditeur.</p>
@@ -98,7 +119,7 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <p>Le règlement général sur la protection des données (RGPD) vous donne un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. Pour ce qui vit sur votre téléphone, vous les exercez directement dans l'application : vos données y sont consultables, modifiables, exportables en CSV et supprimables. Pour le reste, écrivez à <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a> ; la réponse vient sous un mois. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr/fr/plaintes">cnil.fr</a>).</p>
 
 <h2>Enfants</h2>
-<p>Morshed n'est pas destinée aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant.</p>
+<p>Le carnet n'est pas destiné aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée les concernant. La fonction « Amis », qui suppose un compte, n'est ouverte qu'à partir de 15 ans.</p>
 
 <h2>Modifications</h2>
 <p>Cette page est mise à jour à chaque changement du comportement de l'application. La date en haut de page fait foi. Un changement qui élargirait les données traitées sera signalé dans les notes de version.</p>
@@ -106,7 +127,7 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <hr class="lang">
 
 <h1 style="margin-top:3rem">Morshed — Privacy Policy</h1>
-<p class="sous">Android application <code>app.morshed</code> · Last updated: 28 September 2026 · English summary</p>
+<p class="sous">Android application <code>app.morshed</code> · Last updated: 1 October 2026 · English summary</p>
 
 <h2 style="border-top:0;padding-top:0">In short</h2>
 <p>Morshed is a workout log. Since version 0.39.0 everything happens on your phone: your workouts are stored there, and the day's workout is composed there. <strong>The app sends nothing to the developer.</strong> It contains no advertising, no analytics and no third-party tracking SDK. The developer, an independent publisher, is the data controller: <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
@@ -117,8 +138,12 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <h2>Workout composition, voice input, videos</h2>
 <p>Workouts are composed entirely on the phone; nothing is transmitted to do so. If you tap the microphone, your voice goes to your phone's speech recognition service (usually Google's), which may process it on its servers; Morshed only receives the text and keeps no recording. "Watch a demonstration video" opens a YouTube search for the exercise name in your browser.</p>
 
-<h2>Account sign-in (test versions)</h2>
-<p>Since version 0.44.0 the app no longer offers to sign in; it works fully without an account. The following only concerns testers who signed in with an earlier version. Credentials were entered with Google or Microsoft, in the browser. The provider sends your email address, name and profile photo link to the developer's relay, which checks your address against the list of invited testers and gives the phone a signed session. The relay keeps nothing else about you; the session and profile stay on the phone, encrypted. The relay is hosted by Vercel Inc. in the United States, under the European Commission's standard contractual clauses (decision 2021/914) included in Vercel's data processing agreement. Signing out deletes the session from the phone; you can ask to be removed from the tester list at any time.</p>
+<h2>Account sign-in</h2>
+<p>The log works fully without an account. Signing in is only proposed behind the <strong>"Friends"</strong> button, to use the training-with-friends feature described below. Credentials are entered with Google or Microsoft, in the browser, never in the app. The provider sends your email address, name and profile photo link to the developer's relay, which does not keep your email address: an identifier computed from it (impossible to reverse without it) recognizes you on your next sign-in. The relay is hosted by Vercel Inc. in the United States, under the European Commission's standard contractual clauses (decision 2021/914). Signing out deletes the session from the phone; deleting your account is described below.</p>
+
+<h2>Training with friends</h2>
+<p>Since version 0.46.0, "Friends" lets you invite people, motivate each other before a workout, set up a meetup, send a challenge, or train together at a distance. It is optional and stays closed unless you open it. It sends out: your first name, your friends list, workout templates you share (exercises, sets, reps — never weights), your progress during a group workout (sets done, not weights lifted), the totals shown in a group recap, your replies to meetups and invitations, up to three muscles you train less than others (no numbers, only with your explicit agreement when composing a group workout), and your phone's notification token. Your training history and weights never leave your phone.</p>
+<p>This data is processed by a Cloudflare server restricted to EU storage; notifications go through Google's Firebase Cloud Messaging; sign-in goes through the Vercel relay above. A group session is deleted 24 hours after it closes; your account and friends list are kept until you delete your account. Legal basis: performance of the service you request (GDPR art. 6.1.b), and your explicit consent for the lagging muscles (art. 6.1.a). The feature requires an account and is open from age 15, the age of digital consent under French law. Cloudflare, Inc. and Google LLC are certified under the EU-U.S. Data Privacy Framework for this transfer. Delete your account in the app (<strong>Friends → My account → Delete my account</strong>) or at <a href="https://morshed-file.vercel.app/supprimer-mon-compte">morshed-file.vercel.app/supprimer-mon-compte</a>.</p>
 
 <h2>Versions before 0.39.0</h2>
 <p>From version 0.30 to 0.38, composing a workout or generating an illustration went through a server operated by the developer. With your email address, the app sent a workout file (feasible exercises, last two weeks of volume, last weights, levels, equipment, location, requested duration), or the workout's exercises for an illustration. The server had these requests processed by an Anthropic AI model (Claude) and drew illustrations on a computer of the developer. <strong>On 27 September 2026 the developer deleted all these requests</strong>, and the relay no longer accepts any; the last working copies are destroyed by 27 October 2026. If you still run an older version, update from the Play Store. The server's technical log kept the email address and time of each request; these lines are deleted on request.</p>
@@ -130,7 +155,7 @@ hr.lang{margin:4rem 0 0;border:0;border-top:1px solid var(--trait)}
 <p>Clearing the app's data or uninstalling it deletes everything, immediately and permanently; the developer holds no copy of your training history. Under the GDPR you have rights of access, rectification, erasure, restriction, objection and portability. For data on your phone, you exercise them in the app, which lets you view, edit, export and delete your data. For anything else, email <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>; you will get an answer within a month. You may also lodge a complaint with the CNIL, the French data protection authority. See the <a href="suppression.html">data deletion page</a>.</p>
 
 <h2>Children</h2>
-<p>Morshed is not directed at children under 13 and knowingly collects no data concerning them.</p>
+<p>The log is not directed at children under 13 and knowingly collects no data concerning them. The "Friends" feature, which requires an account, is open from age 15.</p>
 
 <footer>
 Morshed · <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a> · <a href="suppression.html">Supprimer vos données</a>
