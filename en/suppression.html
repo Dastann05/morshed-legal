@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morshed — Delete Your Data</title>
+<link rel="alternate" hreflang="fr" href="https://dastann05.github.io/morshed-legal/suppression.html">
+<link rel="alternate" hreflang="en" href="https://dastann05.github.io/morshed-legal/en/suppression.html">
+<style>
+:root{--fond:#14120f;--texte:#e8e3da;--doux:#a09788;--accent:#5aa9ff;--trait:#2a261f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 .25rem}
+.sous{color:var(--doux);margin:0 0 2.5rem;font-size:.95rem}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-top:1.5rem;border-top:1px solid var(--trait)}
+ol,ul{padding-left:1.15rem}
+li{margin:.45rem 0}
+a{color:var(--accent)}
+strong{color:#fff}
+code{color:var(--doux)}
+table{border-collapse:collapse;width:100%;margin:.5rem 0 0}
+th,td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--trait);vertical-align:top}
+th{color:var(--doux);font-weight:500;font-size:.9rem}
+footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);color:var(--doux);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Morshed — Delete Your Account and Data</h1>
+<p class="sous">Android application <code>app.morshed</code> · Last updated: October 6, 2026 · <a href="../suppression.html" hreflang="fr" lang="fr">Français</a></p>
+
+<h2>What to know first</h2>
+<p>Morshed keeps <strong>nothing about you with the developer</strong>, unless you open "Friends" to train with other people: that feature requires an account. Your sessions, your history and your settings still live in the app's private database, on your phone, and the day's session is composed there.</p>
+<p>Outside the device, data can exist for four reasons, each one a choice you made: your "Friends" account if you signed in, the Android backup in your own Google account, the files you exported, and your email address on the testers list if the developer invited you to test the app. All of it can be deleted; the steps are below.</p>
+
+<h2>1. Delete the app's data (immediate)</h2>
+<ol>
+  <li>Open your phone's <strong>Settings</strong>.</li>
+  <li>Go to <strong>Apps</strong>, then <strong>Morshed</strong>.</li>
+  <li>Tap <strong>Storage</strong>, then <strong>Clear storage</strong> (<strong>Clear data</strong> on some phones).</li>
+</ol>
+<p>Everything is deleted on the spot: sessions, imported history, templates, settings, chosen photos, account session and local backups. Deletion is permanent and the developer has no copy. Uninstalling the app has the same effect. On its own, it does not delete your "Friends" account on the server: see step 2.</p>
+
+<h2>2. Delete your "Friends" account (if you signed in)</h2>
+<p>Two ways, your choice:</p>
+<ul>
+  <li><strong>In the app</strong>: <strong>Friends → My account → Delete my account</strong>.</li>
+  <li><strong>From a browser</strong>, without the app: <a href="https://morshed-file.vercel.app/supprimer-mon-compte">morshed-file.vercel.app/supprimer-mon-compte</a>, then sign in to confirm.</li>
+</ul>
+<p>Deletion is immediate: your account, your friends list, your invitations, your meetups, your challenges and your shared programs disappear from the server. A group session in progress erases itself 24 hours after it closes, whether or not you delete your account.</p>
+
+<h2>3. Delete the Android backup (if it is on)</h2>
+<p>If your phone's backup is on, Android may have copied the app's database and settings to your Google account. That copy belongs to you and the developer has no access to it. To delete it: <strong>Settings → Google → Backup</strong>, then delete the Morshed backup. You can also turn off backup for this app.</p>
+
+<h2>4. Remove yourself from the testers list (if you were invited)</h2>
+<p>If the developer invited you to test the app, your address is on the testers list. Since October 1, 2026, that list no longer decides who can sign in. To have your address removed, write to <a href="mailto:gagoun.prs@gmail.com?subject=Morshed%20data%20deletion%20request">gagoun.prs@gmail.com</a> from that address, with the subject <em>"Morshed data deletion request"</em>. The same request also erases the lines of the server's technical log that carry your address, left over from versions before 0.39.0.</p>
+<p>The request is handled within <strong>30 days</strong>, in practice much faster, and you receive written confirmation.</p>
+<p>Without writing to anyone, you can sign out from your profile page at any time, and remove access from <a href="https://myaccount.google.com/permissions">your Google account</a> or your Microsoft account.</p>
+
+<h2>What is deleted, what is kept</h2>
+<table>
+  <tr><th>Data</th><th>Where it lives</th><th>What happens</th></tr>
+  <tr><td>Sessions, history, templates, settings, chosen photos</td><td>Your phone</td><td>Deleted immediately at step 1.</td></tr>
+  <tr><td>Account session and profile (email, name, photo)</td><td>Your phone, encrypted</td><td>Deleted when you sign out, or at step 1.</td></tr>
+  <tr><td>"Friends" account, friends list, invitations, meetups, challenges, shared programs</td><td>Cloudflare server (European Union)</td><td>Deleted immediately at step 2.</td></tr>
+  <tr><td>Group session in progress</td><td>Cloudflare server (European Union)</td><td>Erased automatically 24 hours after it closes, with nothing for you to do.</td></tr>
+  <tr><td>Files you exported</td><td>The folder you chose</td><td>They belong to you; delete them yourself.</td></tr>
+  <tr><td>Android backup</td><td>Your Google account</td><td>Deleted by you at step 3. The developer has no access to it.</td></tr>
+  <tr><td>Email address on the testers list</td><td>With the developer</td><td>Removed on request, within 30 days (step 4).</td></tr>
+  <tr><td>Session and illustration requests from versions 0.30 to 0.38</td><td>The developer's server</td><td>Deleted on September 27, 2026; last working copies destroyed by October 27, 2026 at the latest.</td></tr>
+  <tr><td>Address and time of those requests, in the technical log</td><td>The developer's server</td><td>Deleted on request (step 4).</td></tr>
+</table>
+<p>The developer keeps neither your training history, nor your loads, nor your body measurements.</p>
+
+<p style="margin-top:2rem"><a href="./">Morshed privacy policy</a></p>
+
+<footer>
+Morshed · <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a> · <a href="./">Privacy policy</a> · <a href="../suppression.html" hreflang="fr" lang="fr">Français</a>
+</footer>
+
+</main>
+</body>
+</html>
