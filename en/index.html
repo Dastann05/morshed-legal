@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morshed — Privacy Policy</title>
+<link rel="alternate" hreflang="fr" href="https://dastann05.github.io/morshed-legal/">
+<link rel="alternate" hreflang="en" href="https://dastann05.github.io/morshed-legal/en/">
+<style>
+:root{--fond:#14120f;--texte:#e8e3da;--doux:#a09788;--accent:#5aa9ff;--trait:#2a261f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--texte);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 .25rem}
+.sous{color:var(--doux);margin:0 0 2.5rem;font-size:.95rem}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-top:1.5rem;border-top:1px solid var(--trait)}
+p,li{color:var(--texte)}
+ul{padding-left:1.15rem}
+li{margin:.4rem 0}
+a{color:var(--accent)}
+strong{color:#fff}
+code{color:var(--doux)}
+footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);color:var(--doux);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Morshed — Privacy Policy</h1>
+<p class="sous">Android application <code>app.morshed</code> · Last updated: October 6, 2026 · <a href="../" hreflang="fr" lang="fr">Français</a></p>
+
+<h2>In brief</h2>
+<p>Morshed is a training log. Since version 0.39.0, everything happens on your phone: your sessions are recorded there, and the day's session is composed there. <strong>The app sends nothing to the developer.</strong> It contains no advertising, no audience-measurement tool and no third-party tracking SDK.</p>
+
+<h2>Who publishes the app</h2>
+<p>Morshed is published by an independent developer, who is the controller of your data. For any question: <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
+
+<h2>What the app stores on your phone</h2>
+<p>Everything below stays in the app's private database, on your device:</p>
+<ul>
+  <li>your sessions: exercises, loads, reps, sets, rest times, dates;</li>
+  <li>your workout templates and your settings: location, available equipment, body areas to spare, level for each type of movement;</li>
+  <li>the history you import from a CSV file (Strong, Hevy or FitNotes). The file is read on the device and sent nowhere;</li>
+  <li>if you enter them: your bodyweight, your sex and your year of birth, used to compute the volume of bodyweight movements and to place your loads on strength standards; your first name, shown on the home screen;</li>
+  <li>the photos you choose to illustrate a workout. You pick them in Android's photo picker: the app sees only the image you chose, keeps a copy of it, and does not browse your gallery;</li>
+  <li>the phrases you use when dictating, which the app learns to recognize.</li>
+</ul>
+<p>The app asks for no postal address and no phone number. It does not access your contacts, your location or your camera.</p>
+
+<h2>Session composition</h2>
+<p>It happens entirely on the phone, from your history, with no connection. No data is transmitted to compose a session, neither to the developer nor to anyone else.</p>
+
+<h2>Voice input (optional)</h2>
+<p>If you tap the microphone, the app asks for permission to use it, then hands your voice to your phone's speech recognition service, usually Google's. That service may process the audio on its own servers, under its own rules. Morshed receives only the recognized text and keeps no recording.</p>
+
+<h2>Demonstration videos</h2>
+<p>"Watch a demonstration video" opens YouTube in your browser, with a search on the exercise name. YouTube receives that search like any other.</p>
+
+<h2>Signing in to an account</h2>
+<p>The log works entirely without an account. Signing in is offered in one place only: the <strong>"Friends"</strong> button, to use the training-with-friends feature described below. Between version 0.44.0 and version 0.45.x, the app offered no sign-in; since 0.46.0 it is back, for this purpose only.</p>
+<p>There are three ways to sign in: Google, Microsoft, or your email address and a code sent by email (the last one is detailed in the next section). With Google or Microsoft, you type your credentials on the provider's page, in your browser, never in the app. The provider then passes your email address, your name and the link to your profile photo to a relay run by the developer. The relay checks that sign-ups are open, then hands a signed session back to the phone. It does not keep your email address: an identifier computed from it (impossible to recover without the address) recognizes you the next time you sign in. The session and your profile are kept on the phone, encrypted. To show your photo, the app downloads it from the provider.</p>
+<p>This relay is hosted by Vercel Inc., in the United States. This transfer outside the European Union is covered by the European Commission's standard contractual clauses (decision 2021/914), which Vercel's data processing agreement incorporates. This processing rests on your consent, given by signing in; you can withdraw it at any time by signing out or by deleting your account.</p>
+<p>"Sign out," on the profile page, erases the session from the phone and, if the phone is online, asks the relay to revoke it. You can also remove access from <a href="https://myaccount.google.com/permissions">your Google account</a> or your Microsoft account. To delete the account itself, see <a href="suppression.html">the data deletion page</a>.</p>
+
+<h2>Training with friends</h2>
+<p>Since version 0.46.0, the "Friends" button lets you train with other people: invite each other, give each other a nudge before a session, set up a meetup, send a challenge, train at the same time from different places. The feature is optional and stays closed until you open "Friends".</p>
+<p>For it to work, the following information leaves the phone:</p>
+<ul>
+  <li>your social profile: first name, a status line (60 characters at most) and a tile with your initial, in the pattern and color you chose. The profile has no photo;</li>
+  <li>your status, as you set it: Available, Do not disturb or Invisible;</li>
+  <li>the "Training" indicator, if you have at least one friend. The phone signals the start and end of every session, including when you train alone, without the workout's name. The indicator disappears at the end of the session, or after 3 hours if the end is never signaled. While you are Invisible, your friends don't see it;</li>
+  <li>the workout of the session in progress: its name, exercises, sets and reps, never the loads. It is sent when the session starts, but a friend sees it only if they choose "Start the same session," which copies it to their own phone. The server deletes it at the end of the session, and no one can reach it after 3 hours;</li>
+  <li>the pings you send to tell friends you're starting to train, with the workout's name if it has one. The server keeps them for 7 days;</li>
+  <li>the cheers you send to a friend who is mid-session, three at most per friend per session. To enforce that limit, the server keeps the count for two days;</li>
+  <li>your friends list;</li>
+  <li>the workout templates you share: name, exercises, sets and reps, never the loads;</li>
+  <li>your progress during a group session: the sets done, not the weights lifted;</li>
+  <li>the totals of the recap shown at the end of a group session (number of sets, tonnage);</li>
+  <li>your replies to a meetup or an invitation;</li>
+  <li>up to three muscles that you train less than the others, with no numbers, and only if you agree when composing a session for the group;</li>
+  <li>the technical token that lets your phone receive notifications.</li>
+</ul>
+<p>Your training history and your loads stay on your phone: they are never transmitted. The same goes for the "with Jérôme and Avril" note added to sessions done together, and for the team page (shared sessions, group totals): they are computed and stored on the phone only.</p>
+<p><strong>Signing in with email and a code.</strong> If you choose this method, your address is used for one thing only: sending you a 6-digit code. The message is sent from a Morshed Gmail mailbox, which means Google processes it, like any email sent through Gmail. The code expires after 10 minutes and accepts 5 attempts. The server keeps neither the code nor your address in readable form, only their fingerprint (a value computed from them, from which they cannot be recovered). To limit abuse, it also counts requests per address and per IP address, again as fingerprints.</p>
+<p><strong>Where it is hosted.</strong> This data is processed by a Cloudflare server whose storage is restricted to the European Union. Sign-in goes through the Vercel relay described above. Notifications go through Firebase Cloud Messaging, a Google service: the text of each notification passes through its servers, namely the first name of the friend who sends it and, depending on the case, the workout's name, the place of a meetup or the first names of the participants. Sign-in codes go through Gmail, another Google service.</p>
+<p><strong>How long it is kept.</strong> A group session is deleted 24 hours after it closes. Your account, your friends list and the rest of this data are kept until you delete your account.</p>
+<p><strong>How to delete it.</strong> In the app: <strong>Friends → My account → Delete my account</strong>. From a browser, without the app: <a href="https://morshed-file.vercel.app/supprimer-mon-compte">morshed-file.vercel.app/supprimer-mon-compte</a>. Either way, deletion is immediate: the account, friendships, invitations and everything else disappear from the server.</p>
+<p><strong>Legal basis.</strong> For most of this data, the processing is necessary to provide the service you ask for by opening "Friends" (GDPR article 6(1)(b)). For the lagging muscles, the basis is your explicit agreement, given each time you compose a session for the group (article 6(1)(a)).</p>
+<p><strong>Minimum age.</strong> The log has no minimum age. The "Friends" feature requires an account and is reserved for people aged 15 and over, the age from which French law lets you consent on your own to this kind of processing. The app does not ask for your age and does not check it.</p>
+<p><strong>Subprocessors and transfers outside the European Union.</strong> Cloudflare, Inc. and Google LLC (Firebase Cloud Messaging, Gmail) are based in the United States; both take part in the EU-U.S. Data Privacy Framework, which covers this transfer. Vercel Inc., for sign-in, remains covered by the standard contractual clauses mentioned above.</p>
+
+<h2>Versions before 0.39.0</h2>
+<p>From version 0.30 to version 0.38, composing a session or generating an illustration went through a server run by the developer. For a session, the app sent it a file along with your email address: feasible exercises, the volume of your last two weeks, latest loads, levels, equipment, location and requested duration. For an illustration, the exercises of the workout. The server had these requests processed by an artificial intelligence model from Anthropic (Claude) and drew the illustrations on a computer belonging to the developer.</p>
+<p><strong>On September 27, 2026, the developer deleted all of these requests</strong>, and the relay no longer accepts any. The last working copies are destroyed by October 27, 2026 at the latest. If you still use an old version, update the app from the Play Store. The server's technical log kept the email address and time of each request; these lines are deleted on request.</p>
+
+<h2>Backup and transfer</h2>
+<ul>
+  <li><strong>Local backups</strong>: the app keeps a copy of its database after a session and before each update of its schema. These copies stay on the device.</li>
+  <li><strong>Export</strong>: you can choose a folder where the app exports your sessions as CSV. If that folder belongs to an online service (Google Drive, OneDrive…), your history is stored there under that service's rules.</li>
+  <li><strong>Android backup</strong>: if your phone's backup is on, Android copies the app's database and settings to your Google storage, without your account session or your photos. This copy is encrypted, managed by Google under your account, and the developer has no access to it. You can turn it off in Android settings.</li>
+  <li><strong>Switching phones</strong>: during a device-to-device transfer, Android copies the same items, photos included.</li>
+</ul>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No advertising, no in-app purchases, no advertising tracker.</li>
+  <li>No audience-measurement tool and no crash reporting (no Firebase Analytics, no Crashlytics, nothing equivalent). The app's only Firebase component, Firebase Cloud Messaging, receives the "Friends" notifications; it starts only if you are signed in to "Friends", and its analytics collection is turned off.</li>
+  <li>No tracking of your activity across other apps or websites over time. The app therefore has no use for "Do Not Track" signals, and no third party collects that kind of data through it.</li>
+  <li>No selling, renting or sharing of data with anyone.</li>
+  <li>No profiling, no automated decision about you.</li>
+</ul>
+
+<h2>Android permissions requested, and why</h2>
+<ul>
+  <li><strong>Notifications</strong> and <strong>exact alarm</strong>: show the rest timer and ring at the right moment.</li>
+  <li><strong>Foreground service</strong>: keep the timer running when the screen turns off.</li>
+  <li><strong>Vibration</strong>: signal the end of a rest.</li>
+  <li><strong>Microphone</strong>: voice input, only when you tap the microphone.</li>
+  <li><strong>Internet</strong> and <strong>network state</strong>: signing in to an account and the "Friends" feature.</li>
+  <li><strong>Run at startup</strong> and <strong>prevent the phone from sleeping</strong>: added by Android's scheduled-task library, so it can resume its tasks after a restart.</li>
+</ul>
+
+<h2>Retention, and how to erase everything</h2>
+<p>Your data stays on your device for as long as the app is installed. To delete everything, clear the app's storage or uninstall it from Android settings: it is immediate and permanent, and the developer holds no copy of your history. The full procedure, including the Android backup and the testers list: <a href="suppression.html">delete your account and your data</a>.</p>
+
+<h2>Your rights</h2>
+<p>The General Data Protection Regulation (GDPR) gives you a right of access, rectification, erasure, restriction, objection and portability. For what lives on your phone, you exercise them directly in the app: your data can be viewed, edited, exported as CSV and deleted there. For the rest, write to <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>; you get an answer within one month. You can also lodge a complaint with the CNIL, the French data protection authority (<a href="https://www.cnil.fr/fr/plaintes">cnil.fr</a>), or with the data protection authority of the country where you live (in the United Kingdom, the <a href="https://ico.org.uk/make-a-complaint/">ICO</a>).</p>
+
+<h2>Children</h2>
+<p>The log is not intended for children under 13 and knowingly collects no data about them. The "Friends" feature, which requires an account, is reserved for people aged 15 and over; the app does not check age.</p>
+
+<h2>Changes</h2>
+<p>This page is updated every time the app's behavior changes. The date at the top of the page is authoritative. A change that would widen the data processed will be flagged in the release notes.</p>
+
+<footer>
+Morshed · <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a> · <a href="suppression.html">Delete your data</a> · <a href="../" hreflang="fr" lang="fr">Français</a>
+</footer>
+
+</main>
+</body>
+</html>
