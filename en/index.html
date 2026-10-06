@@ -30,7 +30,7 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <p class="sous">Android application <code>app.morshed</code> · Last updated: October 6, 2026 · <a href="../" hreflang="fr" lang="fr">Français</a></p>
 
 <h2>In brief</h2>
-<p>Morshed is a training log. Since version 0.39.0, everything happens on your phone: your sessions are recorded there, and the day's session is composed there. <strong>The app sends nothing to the developer.</strong> It contains no advertising, no audience-measurement tool and no third-party tracking SDK.</p>
+<p>Morshed is a training log. Since version 0.39.0, everything happens on your phone: your sessions are recorded there, and the day's session is built there. <strong>The app sends nothing to the developer.</strong> It contains no advertising, no audience-measurement tool and no third-party tracking SDK.</p>
 
 <h2>Who publishes the app</h2>
 <p>Morshed is published by an independent developer, who is the controller of your data. For any question: <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
@@ -47,8 +47,8 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 </ul>
 <p>The app asks for no postal address and no phone number. It does not access your contacts, your location or your camera.</p>
 
-<h2>Session composition</h2>
-<p>It happens entirely on the phone, from your history, with no connection. No data is transmitted to compose a session, neither to the developer nor to anyone else.</p>
+<h2>Building a session</h2>
+<p>It happens entirely on the phone, from your history, with no connection. No data is transmitted to build a session, neither to the developer nor to anyone else.</p>
 
 <h2>Voice input (optional)</h2>
 <p>If you tap the microphone, the app asks for permission to use it, then hands your voice to your phone's speech recognition service, usually Google's. That service may process the audio on its own servers, under its own rules. Morshed receives only the recognized text and keeps no recording.</p>
@@ -77,7 +77,7 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
   <li>your progress during a group session: the sets done, not the weights lifted;</li>
   <li>the totals of the recap shown at the end of a group session (number of sets, tonnage);</li>
   <li>your replies to a meetup or an invitation;</li>
-  <li>up to three muscles that you train less than the others, with no numbers, and only if you agree when composing a session for the group;</li>
+  <li>up to three muscles that you train less than the others, with no numbers, and only if you agree when building a session for the group;</li>
   <li>the technical token that lets your phone receive notifications.</li>
 </ul>
 <p>Your training history and your loads stay on your phone: they are never transmitted. The same goes for the "with Jérôme and Avril" note added to sessions done together, and for the team page (shared sessions, group totals): they are computed and stored on the phone only.</p>
@@ -85,12 +85,12 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <p><strong>Where it is hosted.</strong> This data is processed by a Cloudflare server whose storage is restricted to the European Union. Sign-in goes through the Vercel relay described above. Notifications go through Firebase Cloud Messaging, a Google service: the text of each notification passes through its servers, namely the first name of the friend who sends it and, depending on the case, the workout's name, the place of a meetup or the first names of the participants. Sign-in codes go through Gmail, another Google service.</p>
 <p><strong>How long it is kept.</strong> A group session is deleted 24 hours after it closes. Your account, your friends list and the rest of this data are kept until you delete your account.</p>
 <p><strong>How to delete it.</strong> In the app: <strong>Friends → My account → Delete my account</strong>. From a browser, without the app: <a href="https://morshed-file.vercel.app/supprimer-mon-compte">morshed-file.vercel.app/supprimer-mon-compte</a>. Either way, deletion is immediate: the account, friendships, invitations and everything else disappear from the server.</p>
-<p><strong>Legal basis.</strong> For most of this data, the processing is necessary to provide the service you ask for by opening "Friends" (GDPR article 6(1)(b)). For the lagging muscles, the basis is your explicit agreement, given each time you compose a session for the group (article 6(1)(a)).</p>
+<p><strong>Legal basis.</strong> For most of this data, the processing is necessary to provide the service you ask for by opening "Friends" (GDPR article 6(1)(b)). For the lagging muscles, the basis is your explicit agreement, given each time you build a session for the group (article 6(1)(a)).</p>
 <p><strong>Minimum age.</strong> The log has no minimum age. The "Friends" feature requires an account and is reserved for people aged 15 and over, the age from which French law lets you consent on your own to this kind of processing. The app does not ask for your age and does not check it.</p>
 <p><strong>Subprocessors and transfers outside the European Union.</strong> Cloudflare, Inc. and Google LLC (Firebase Cloud Messaging, Gmail) are based in the United States; both take part in the EU-U.S. Data Privacy Framework, which covers this transfer. Vercel Inc., for sign-in, remains covered by the standard contractual clauses mentioned above.</p>
 
 <h2>Versions before 0.39.0</h2>
-<p>From version 0.30 to version 0.38, composing a session or generating an illustration went through a server run by the developer. For a session, the app sent it a file along with your email address: feasible exercises, the volume of your last two weeks, latest loads, levels, equipment, location and requested duration. For an illustration, the exercises of the workout. The server had these requests processed by an artificial intelligence model from Anthropic (Claude) and drew the illustrations on a computer belonging to the developer.</p>
+<p>From version 0.30 to version 0.38, building a session or generating an illustration went through a server run by the developer. For a session, the app sent it a file along with your email address: feasible exercises, the volume of your last two weeks, latest loads, levels, equipment, location and requested duration. For an illustration, the exercises of the workout. The server had these requests processed by an artificial intelligence model from Anthropic (Claude) and drew the illustrations on a computer belonging to the developer.</p>
 <p><strong>On September 27, 2026, the developer deleted all of these requests</strong>, and the relay no longer accepts any. The last working copies are destroyed by October 27, 2026 at the latest. If you still use an old version, update the app from the Play Store. The server's technical log kept the email address and time of each request; these lines are deleted on request.</p>
 
 <h2>Backup and transfer</h2>
