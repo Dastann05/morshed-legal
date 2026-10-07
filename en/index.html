@@ -30,11 +30,11 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <p class="sous">Android application <code>app.morshed</code> · Last updated: October 7, 2026 · <a href="../" hreflang="fr" lang="fr">Français</a></p>
 
 <h2>In brief</h2>
-<p>Morshed is a training log. Since version 0.39.0, everything happens on your phone: your sessions are recorded there, and the day's session is built there. <strong>The app sends nothing to the developer.</strong> It contains no advertising, no audience-measurement tool and no third-party tracking SDK.</p>
+<p>Morshed is a training log. Since version 0.39.0, everything happens on your phone: your sessions are recorded there, and the day's session is built there. <strong>Without your agreement, the app sends nothing to the developer.</strong> If you accept anonymous statistics, it sends grouped counts once a week, with no identifier (see below). It contains no advertising, no third-party audience-measurement tool and no third-party tracking SDK.</p>
 
 <h2>Who publishes the app</h2>
 <p>Morshed is published on a non-professional basis by Shervin Pourhashemi, the data controller, based in France. Contact: <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>.</p>
-<p>Hosting providers: these pages, GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States; the "Friends" server, Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, United States, +1 650 319 8930; the sign-in relay, Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States. Details taken from their privacy policies, read on October 7, 2026.</p>
+<p>Hosting providers: these pages, GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States; the "Friends" server and the anonymous statistics server, Cloudflare, Inc., 101 Townsend Street, San Francisco, CA 94107, United States, +1 650 319 8930; the sign-in relay, Vercel Inc., 440 N Barranca Avenue #4133, Covina, CA 91723, United States. Details taken from their privacy policies, read on October 7, 2026.</p>
 
 <h2>What the app stores on your phone</h2>
 <p>Everything below stays in the app's private database, on your device:</p>
@@ -95,6 +95,17 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <p><strong>Minimum age.</strong> The log is not intended for children under 13. The "Friends" feature requires an account and is reserved for people aged 15 and over, age declared on opening, not checked: the first time you open "Friends", the app asks for your year of birth, keeps it on the phone and sends it nowhere. Since sign-in rests on providing the service you ask for (6(1)(b)), this threshold does not depend on consent.</p>
 <p><strong>Subprocessors and transfers outside the European Union.</strong> Cloudflare, Inc. and Google LLC (Firebase Cloud Messaging, Gmail) are based in the United States; both take part in the EU-U.S. Data Privacy Framework, which covers this transfer. Vercel Inc., for sign-in, remains covered by the standard contractual clauses mentioned above.</p>
 
+<h2>Anonymous statistics (optional)</h2>
+<p>Since version 0.49.0, you can agree to share anonymous statistics. The option stays <strong>off until you say yes</strong>: the app offers it once, right after the terms of use, with two buttons of equal weight, "Share" and "No thanks". It is not offered if the declared year of birth shows an age under 15.</p>
+<p><strong>What they are for.</strong> The developer uses them to build dashboards, to run studies on how people train, and to <strong>sell combined statistics</strong> to third parties (brands, gyms or researchers, for example). What is sold or published is totals, never data about you.</p>
+<p><strong>What is counted.</strong> If you agree, your phone keeps weekly counts of what you do in the app: the catalog exercises you do (an exercise you created yourself is counted as "outside the catalog", without its name), the number of sets in each 10 kg load band (in kilograms, even if the app shows you pounds), the number of sessions, their length in 15- to 30-minute bands, their format and the time of day (morning, afternoon, evening, night), how often you open the app, its language and your load unit, and the screens and buttons you use, named by an identifier fixed in the code. These counts are grouped by sex and by ten-year age band, if you filled them in for the scoring scales.</p>
+<p><strong>What never leaves the phone.</strong> Your name, your email address, your "Friends" account, any device or installation identifier, a notification token, your location, your country, any date more precise than the week, the names of your workouts or exercises, your notes, what you dictate, your bodyweight, the year of birth declared when opening "Friends", or the detail of any session.</p>
+<p><strong>In what form.</strong> The counts are added up on the phone. At most once a week, the app sends the counts for finished weeks, with no identifier at all: nothing links two uploads to each other, or an upload to a person. Each weekly count is sent once, then deleted from the phone. If sending fails, it is tried three times at most, then dropped and deleted. A count that could not be sent within eight weeks is deleted.</p>
+<p><strong>What the server does with them.</strong> On arrival, the counts are added to totals shared by all users, then the upload itself is discarded. The statistics server is separate from the "Friends" server, with no link to its data, hosted by Cloudflare with storage restricted to the European Union. It keeps no request log and neither reads nor stores your IP address; Cloudflare sees it while routing the request, as with any connection. Any total covering fewer than 10 people stays on the server: it is never shown, exported or sold.</p>
+<p><strong>Legal basis.</strong> Your consent (GDPR article 6(1)(a), and article 82 of the French Data Protection Act for reading information from your phone). Saying no changes nothing in how the app works.</p>
+<p><strong>Changing your mind.</strong> In <strong>Settings → Anonymous statistics</strong>, at any time. If you withdraw, collection stops at once and the counts not yet sent are deleted from the phone. What has already been added to the totals cannot be taken out: nothing in them can find your share.</p>
+<p><strong>How long it is kept.</strong> Totals are kept for three years (156 weeks), then deleted automatically.</p>
+
 <h2>Versions before 0.39.0</h2>
 <p>From version 0.30 to version 0.38, building a session or generating an illustration went through a server run by the developer. For a session, the app sent it a file along with your email address: feasible exercises, the volume of your last two weeks, latest loads, levels, equipment, location and requested duration. For an illustration, the exercises of the workout. The server had these requests processed by an automated text-processing provider established in Ireland for European users, with part of the processing possibly taking place in the United States, under its own rules and with no processing agreement; the requests were not used to train its models. The illustrations were drawn on a computer belonging to the developer.</p>
 <p><strong>On September 27, 2026, the developer deleted all of these requests</strong>, and the relay no longer accepts any. The last working copies are destroyed by October 27, 2026 at the latest. If you still use an old version, update the app from the Play Store. The server's technical log kept the email address and time of each request; these lines are deleted automatically by October 27, 2026 at the latest, with nothing for you to do. You can ask for them to be deleted sooner.</p>
@@ -110,9 +121,9 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <h2>What the app does not do</h2>
 <ul>
   <li>No advertising, no in-app purchases, no advertising tracker.</li>
-  <li>No audience-measurement tool and no crash reporting (no Firebase Analytics, no Crashlytics, nothing equivalent). The app's only Firebase component, Firebase Cloud Messaging, receives the "Friends" notifications; it starts only if you are signed in to "Friends", and its analytics collection is turned off.</li>
+  <li>No third-party audience-measurement tool and no crash reporting (no Firebase Analytics, no Crashlytics, nothing equivalent). The app's only Firebase component, Firebase Cloud Messaging, receives the "Friends" notifications; it starts only if you are signed in to "Friends", and its analytics collection is turned off.</li>
   <li>No tracking of your activity across other apps or websites over time. The app therefore has no use for "Do Not Track" signals, and no third party collects that kind of data through it.</li>
-  <li>No selling, renting or sharing of data with anyone.</li>
+  <li>No selling, renting or sharing of your personal data. Only combined statistics, never covering fewer than 10 people, may be sold, and only from the counts of people who agreed to share them.</li>
   <li>No profiling, no automated decision about you.</li>
 </ul>
 
@@ -122,19 +133,20 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
   <li><strong>Foreground service</strong>: keep the timer running when the screen turns off.</li>
   <li><strong>Vibration</strong>: signal the end of a rest.</li>
   <li><strong>Microphone</strong>: voice input, only when you tap the microphone.</li>
-  <li><strong>Internet</strong> and <strong>network state</strong>: signing in to an account and the "Friends" feature.</li>
+  <li><strong>Internet</strong> and <strong>network state</strong>: signing in to an account, the "Friends" feature and, if you accepted them, sending anonymous statistics.</li>
   <li><strong>Run at startup</strong> and <strong>prevent the phone from sleeping</strong>: added by Android's scheduled-task library, so it can resume its tasks after a restart.</li>
 </ul>
 
 <h2>Retention, and how to erase everything</h2>
 <p>Your data stays on your device for as long as the app is installed. To delete everything, clear the app's storage or uninstall it from Android settings: it is immediate and permanent, and the developer holds no copy of your history. The full procedure, including the Android backup and the testers list: <a href="suppression.html">delete your account and your data</a>.</p>
+<p>Anonymous statistics totals are kept for three years, then deleted; counts not yet sent are deleted from the phone as soon as you withdraw your agreement.</p>
 <p>If the developer invited you to test the app, your email address is on his testers list. That list is deleted within 30 days after the closed test ends, with nothing for you to do; you can be removed sooner, on request.</p>
 
 <h2>Your rights</h2>
 <p>The General Data Protection Regulation (GDPR) gives you a right of access, rectification, erasure, restriction, objection and portability. For what lives on your phone, you exercise them directly in the app: your data can be viewed, edited, exported as CSV and deleted there. For the rest, write to <a href="mailto:gagoun.prs@gmail.com">gagoun.prs@gmail.com</a>; you get an answer within one month. You can also lodge a complaint with the CNIL, the French data protection authority (<a href="https://www.cnil.fr/fr/plaintes">cnil.fr</a>), or with the data protection authority of the country where you live.</p>
 
 <h2>Children</h2>
-<p>The log is not intended for children under 13 and knowingly collects no data about them. The "Friends" feature, which requires an account, is reserved for people aged 15 and over, age declared when opening "Friends", not checked.</p>
+<p>The log is not intended for children under 13 and knowingly collects no data about them. The "Friends" feature, which requires an account, is reserved for people aged 15 and over, age declared when opening "Friends", not checked. Anonymous statistics are not offered under a declared age of 15.</p>
 
 <h2>Changes</h2>
 <p>This page is updated every time the app's behavior changes. The date at the top of the page is authoritative. A change that would widen the data processed will be flagged in the release notes.</p>
