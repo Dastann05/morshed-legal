@@ -27,7 +27,7 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <main>
 
 <h1>Morshed — Privacy Policy</h1>
-<p class="sous">Android application <code>app.morshed</code> · Last updated: October 27, 2026 · <a href="../" hreflang="fr" lang="fr">Français</a></p>
+<p class="sous">Android application <code>app.morshed</code> · Last updated: October 29, 2026 · <a href="../" hreflang="fr" lang="fr">Français</a></p>
 
 <h2>In brief</h2>
 <p>Morshed is a training log. Since version 0.39.0, everything happens on your phone: your sessions are recorded there, and the day's session is built there. <strong>Without your agreement, the app sends nothing to the developer.</strong> If you accept anonymous statistics, it sends grouped counts once a week, with no identifier (see below). If you take the Pro subscription, payment happens in Google Play: the developer never sees your card. It contains no advertising, no third-party audience-measurement tool and no third-party tracking SDK.</p>
@@ -114,6 +114,11 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <p><strong>Changing your mind.</strong> In <strong>Settings → Anonymous statistics</strong>, at any time. If you withdraw, collection stops at once and the counts not yet sent are deleted from the phone. What has already been added to the totals cannot be taken out: nothing in them can find your share.</p>
 <p><strong>How long it is kept.</strong> Totals are kept for three years (156 weeks), then deleted automatically.</p>
 
+<h2>Your feedback (optional)</h2>
+<p>Since version 0.57.1, the <strong>"Share feedback"</strong> button (Settings, and the "?" on the home screen) lets you write to the publisher. Nothing is sent until you tap "Send". Your message travels with the app version, the screen you write from, the language, your phone model and its Android version; if you are signed in to "Friends", with your "Friends" account ID, so your notes can be linked together. Nothing else: not your history, not your name, not your email address.</p>
+<p><strong>On the phone.</strong> Without a network, the note waits in the app for seven days at most, then it is dropped. A random number, specific to the installed app, goes with it: it only serves to cap the number of notes per day, and the server keeps nothing but a fingerprint of it, erased after two days, like that of your IP address.</p>
+<p><strong>On the server.</strong> The message is received by the "Friends" server (Cloudflare, storage restricted to the European Union), which keeps it for one year and then erases it. The publisher copies it into a private test log used to track what gets fixed, version by version, for as long as the app is being developed. Please leave out your name, contact details and any health details. To have a note erased, write to the address below quoting its text or date. Deleting your "Friends" account unlinks your ID from your notes.</p>
+
 <h2>Versions before 0.39.0</h2>
 <p>From version 0.30 to version 0.38, building a session or generating an illustration went through a server run by the developer. For a session, the app sent it a file along with your email address: feasible exercises, the volume of your last two weeks, latest loads, levels, equipment, location and requested duration. For an illustration, the exercises of the workout. The server had these requests processed by an automated text-processing provider established in Ireland for European users, with part of the processing possibly taking place in the United States, under its own rules and with no processing agreement; the requests were not used to train its models. The illustrations were drawn on a computer belonging to the developer.</p>
 <p><strong>On September 27, 2026, the developer deleted all of these requests</strong>, and the relay no longer accepts any. The last working copies are destroyed by October 27, 2026 at the latest. If you still use an old version, update the app from the Play Store. The server's technical log kept the email address and time of each request; these lines are deleted automatically by October 27, 2026 at the latest, with nothing for you to do. You can ask for them to be deleted sooner.</p>
@@ -141,13 +146,14 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
   <li><strong>Foreground service</strong>: keep the timer running when the screen turns off.</li>
   <li><strong>Vibration</strong>: signal the end of a rest.</li>
   <li><strong>Microphone</strong>: voice input, only when you tap the microphone.</li>
-  <li><strong>Internet</strong> and <strong>network state</strong>: signing in to an account, the "Friends" feature, checking the Pro subscription if you are signed in and, if you accepted them, sending anonymous statistics.</li>
+  <li><strong>Internet</strong> and <strong>network state</strong>: signing in to an account, the "Friends" feature, checking the Pro subscription if you are signed in, sending your feedback when you write some and, if you accepted them, sending anonymous statistics.</li>
   <li><strong>Google Play billing</strong>: added by the Google Play library, to offer the Pro subscription and know whether it is active.</li>
   <li><strong>Run at startup</strong> and <strong>prevent the phone from sleeping</strong>: added by Android's scheduled-task library, so it can resume its tasks after a restart.</li>
 </ul>
 
 <h2>Retention, and how to erase everything</h2>
 <p>Your data stays on your device for as long as the app is installed. To delete everything, clear the app's storage or uninstall it from Android settings: it is immediate and permanent, and the developer holds no copy of your history. The full procedure, including the Android backup and the testers list: <a href="suppression.html">delete your account and your data</a>.</p>
+<p>Your feedback is kept for one year on the server, and in the publisher's test log for as long as the app is being developed; it is erased on request.</p>
 <p>Anonymous statistics totals are kept for three years, then deleted; counts not yet sent are deleted from the phone as soon as you withdraw your agreement.</p>
 <p>If the developer invited you to test the app, your email address is on his testers list. That list is deleted within 30 days after the closed test ends, with nothing for you to do; you can be removed sooner, on request. If you were given Pro for life as a tester, your address also stays on the relay's access list for as long as that access is offered; it is removed on request.</p>
 

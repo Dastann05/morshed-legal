@@ -27,7 +27,7 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <main>
 
 <h1>Morshed — Politique de confidentialité</h1>
-<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 27 octobre 2026 · <a href="en/" hreflang="en" lang="en">English</a></p>
+<p class="sous">Application Android <code>app.morshed</code> · Dernière mise à jour : 29 octobre 2026 · <a href="en/" hreflang="en" lang="en">English</a></p>
 
 <h2>En bref</h2>
 <p>Morshed est un carnet d'entraînement. Depuis la version 0.39.0, tout se passe sur votre téléphone : vos séances y sont enregistrées, et la séance du jour y est composée. <strong>Sans votre accord, l'application n'envoie rien à l'éditeur.</strong> Si vous acceptez les statistiques anonymes, elle envoie une fois par semaine des compteurs regroupés, sans identifiant (voir plus bas). Si vous prenez l'abonnement Pro, le paiement se fait chez Google Play : l'éditeur ne voit jamais votre carte. Elle ne contient ni publicité, ni outil tiers de mesure d'audience, ni SDK tiers de suivi.</p>
@@ -114,6 +114,11 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
 <p><strong>Changer d'avis.</strong> Dans <strong>Réglages → Statistiques anonymes</strong>, à tout moment. Si vous retirez votre accord, la collecte s'arrête aussitôt et les compteurs pas encore envoyés sont effacés du téléphone. Ce qui a déjà été ajouté aux totaux ne peut pas être retiré : rien n'y permet de retrouver votre part.</p>
 <p><strong>Durée de conservation.</strong> Les totaux sont conservés trois ans (156 semaines), puis effacés automatiquement.</p>
 
+<h2>Vos avis (facultatifs)</h2>
+<p>Depuis la version 0.57.1, le bouton <strong>« Donner mon avis »</strong> (Réglages, et le « ? » de l'accueil) vous permet d'écrire à l'éditeur. Rien ne part sans que vous touchiez « Envoyer ». Votre message part avec la version de l'application, l'écran d'où vous écrivez, la langue, le modèle du téléphone et sa version d'Android ; si vous êtes connecté à « Amis », avec votre identifiant de compte « Amis », pour relier vos avis entre eux. Rien d'autre : ni votre historique, ni votre nom, ni votre adresse e-mail.</p>
+<p><strong>Sur le téléphone.</strong> Sans réseau, l'avis attend dans l'application, sept jours au plus, puis il est oublié. Un numéro tiré au hasard, propre à l'application installée, accompagne l'envoi : il sert seulement à limiter le nombre d'avis par jour, et le serveur n'en garde qu'une empreinte, effacée au bout de deux jours, comme celle de votre adresse IP.</p>
+<p><strong>Sur le serveur.</strong> Le message est reçu par le serveur d'« Amis » (Cloudflare, stockage restreint à l'Union européenne), qui le garde un an puis l'efface. L'éditeur le recopie dans son cahier de recette, un document privé qui sert à suivre ce qui est corrigé, version par version, tant que l'application est développée. N'y écrivez ni votre nom, ni vos coordonnées, ni un détail de santé. Pour faire effacer un avis, écrivez à l'adresse ci-dessous en citant son texte ou sa date. Supprimer votre compte « Amis » détache votre identifiant de vos avis.</p>
+
 <h2>Les versions antérieures à la 0.39.0</h2>
 <p>De la version 0.30 à la version 0.38, composer une séance ou générer une illustration passait par un serveur de l'éditeur. Pour une séance, l'application y envoyait, avec votre adresse e-mail, un dossier : exercices réalisables, volume de vos deux dernières semaines, dernières charges, niveaux, matériel, lieu et durée demandés. Pour une illustration, les exercices du workout. Le serveur faisait traiter ces demandes par un prestataire de traitement automatisé de texte établi en Irlande pour les utilisateurs européens, une partie du traitement pouvant avoir lieu aux États-Unis, selon ses propres règles et sans contrat de sous-traitance ; les demandes n'ont pas servi à entraîner ses modèles. Les illustrations étaient dessinées sur un ordinateur de l'éditeur.</p>
 <p><strong>Le 27 septembre 2026, l'éditeur a effacé toutes ces demandes</strong>, et le relais n'en accepte plus aucune. Les dernières copies de travail sont détruites au plus tard le 27 octobre 2026. Si vous utilisez encore une ancienne version, mettez l'application à jour depuis le Play Store. Le journal technique du serveur a gardé, pour chaque demande, l'adresse e-mail et l'heure ; ces lignes sont effacées d'office au plus tard le 27 octobre 2026, sans démarche de votre part. Vous pouvez demander leur effacement avant cette date.</p>
@@ -141,13 +146,14 @@ footer{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid var(--trait);co
   <li><strong>Service au premier plan</strong> : garder le minuteur en marche quand l'écran s'éteint.</li>
   <li><strong>Vibreur</strong> : signaler la fin d'un repos.</li>
   <li><strong>Microphone</strong> : la dictée vocale, seulement quand vous touchez le micro.</li>
-  <li><strong>Internet</strong> et <strong>état du réseau</strong> : la connexion à un compte, la fonction « Amis », la vérification de l'abonnement Pro si vous êtes connecté et, si vous les avez acceptées, l'envoi des statistiques anonymes.</li>
+  <li><strong>Internet</strong> et <strong>état du réseau</strong> : la connexion à un compte, la fonction « Amis », la vérification de l'abonnement Pro si vous êtes connecté, l'envoi de vos avis quand vous en écrivez un et, si vous les avez acceptées, l'envoi des statistiques anonymes.</li>
   <li><strong>Facturation Google Play</strong> : ajoutée par la bibliothèque de Google Play, pour proposer l'abonnement Pro et savoir s'il est actif.</li>
   <li><strong>Démarrage du téléphone</strong> et <strong>maintien en éveil</strong> : ajoutées par la bibliothèque Android des tâches planifiées, pour reprendre ses tâches après un redémarrage.</li>
 </ul>
 
 <h2>Durée de conservation, et comment tout effacer</h2>
 <p>Vos données restent sur votre appareil tant que l'application y est installée. Pour tout supprimer, effacez les données de l'application ou désinstallez-la depuis les réglages Android : c'est immédiat et définitif, et l'éditeur ne détient aucune copie de votre historique. La marche à suivre complète, avec la sauvegarde Android et la liste des testeurs : <a href="suppression.html">supprimer votre compte et vos données</a>.</p>
+<p>Vos avis sont gardés un an sur le serveur, et dans le cahier de recette de l'éditeur tant que l'application est développée ; ils sont effacés sur demande.</p>
 <p>Les totaux des statistiques anonymes sont conservés trois ans, puis effacés ; les compteurs pas encore envoyés s'effacent du téléphone dès que vous retirez votre accord.</p>
 <p>Si l'éditeur vous a invité à tester l'application, votre adresse e-mail figure sur sa liste de testeurs. Cette liste est effacée dans les 30 jours suivant la fin du test fermé, sans démarche de votre part ; vous pouvez en être retiré avant, sur demande. Si Pro vous a été offert à vie comme testeur, votre adresse reste en plus sur la liste d'accès du relais tant que cet accès vous est offert ; elle en est retirée sur simple demande.</p>
 
